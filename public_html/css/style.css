@@ -2,8 +2,8 @@ body, html {
     height: 100%;
 }
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
-    height: 50%;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url("https://live.staticflickr.com/3488/3916973117_458e904337_b.jpg");
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -16,4 +16,28 @@ body, html {
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+.box{
+    background-color: lightgray;
+    font-family: Serif;
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    font-family: Serif;
+    padding: 10px;
+    background-color: lightgray;
+}
+.footer{
+    text-align: center;
+    font-family: Serif;
+    font-size: 20px;
+    background-color: lightgray;
+    margin-top: -17px;
+}
+.wrappingimage
+{
+    float: left;
+    margin: 30px 12px 3px 4px;
+    border: 2px solid blue;
 }
