@@ -55,6 +55,81 @@
         Inheritance allows the information to be in a specific hierarchy from superclass to subclass. This can be seen in our calculator when Calculation becomes Calculations in a different subclass. Again, the subclass inherits from the superclass.
     </p>
     <p>
+        """Calculation history Class"""
+    </p>
+    <p>
+        class Calculations:
+    </p>
+    <p>
+        history = []
+    </p>
+    <p>
+        # pylint: disable=too-few-public-methods
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def clear_history():
+    </p>
+    <p>
+        Calculations.history.clear()
+    </p>
+    <p>
+        return True
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def count_history():
+    </p>
+    <p>
+        return len(Calculations.history)
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def get_last_calculation():
+    </p>
+    <p>
+        return Calculations.history[-1]
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def get_first_calculation():
+    </p>
+    <p>
+        return Calculations.history[-1]
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def get_calculation(num):
+    </p>
+    <p>
+        """ get a specific calculation from history"""
+    </p>
+    <p>
+        return Calculations.history[num]
+    </p>
+    <p>
+        @staticmethod
+    </p>
+    <p>
+        def add_calculation(calculation):
+    </p>
+    <p>
+        """ get a specific calculation from history"""
+    </p>
+    <p>
+        return Calculations.history.append(calculation)
+    </p>
+    <p>
         Polymorphism is when a class has multiple methods that are the same, but with different parameters. This is similar to how in the Calculator class you have different static methods, but that the class itself is the same.
     </p>
 </div>
